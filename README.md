@@ -17,3 +17,14 @@ the sketch-constraint-solving foundation for a native macOS CAD app.
   mutation.
 
 52 tests, all passing. Not yet integrated into any consuming app.
+
+## License
+
+`Sources/CPlaneGCS/` is FreeCAD's own PlaneGCS core (LGPL-2.1, "GNU
+Library General Public License" per its original file headers), vendored
+here as a manual copy — original copyright notices intact, full license
+text in [`COPYING.LIB`](COPYING.LIB). The Swift API and Obj-C++ bridge
+layers around it (`PlaneGCSSwift`, `PlaneGCSBridge`) are this project's
+own original code and don't yet carry their own declared license — worth
+deciding explicitly (e.g. LGPL-2.1 for the whole repo, to stay clean and
+consistent) rather than leaving implicit.
