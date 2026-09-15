@@ -20,11 +20,16 @@ the sketch-constraint-solving foundation for a native macOS CAD app.
 
 ## License
 
-`Sources/CPlaneGCS/` is FreeCAD's own PlaneGCS core (LGPL-2.1, "GNU
-Library General Public License" per its original file headers), vendored
-here as a manual copy — original copyright notices intact, full license
-text in [`COPYING.LIB`](COPYING.LIB). The Swift API and Obj-C++ bridge
-layers around it (`PlaneGCSSwift`, `PlaneGCSBridge`) are this project's
-own original code and don't yet carry their own declared license — worth
-deciding explicitly (e.g. LGPL-2.1 for the whole repo, to stay clean and
-consistent) rather than leaving implicit.
+This project is licensed under the **GNU General Public License v3.0** —
+see [`LICENSE`](LICENSE).
+
+`Sources/CPlaneGCS/` is FreeCAD's own PlaneGCS core, vendored here as a
+manual copy with its original copyright notices intact. Its own header
+licenses it under "the GNU Library General Public License... either
+version 2 of the License, or (at your option) any later version" — full
+text in [`COPYING.LIB`](COPYING.LIB). LGPL-3.0 (one of those later
+versions) is defined as GPL-3.0 plus additional permissions (chiefly,
+permission to link into proprietary code without that code also becoming
+GPL), so combining this LGPL-2-or-later core into a GPL-3.0 project and
+simply not exercising those extra permissions is a use the license's own
+"or later version" clause is designed to allow.
